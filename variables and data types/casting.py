@@ -1,0 +1,13 @@
+x="42"
+y=int(x)
+print(type(y))
+z="3.14"
+s=float(z)
+print(type(s))
+num=100
+string=str(num)
+print(type(string))
+g=3.9
+print(int(g))
+w=7
+print(float(w))
