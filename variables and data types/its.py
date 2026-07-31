@@ -1,0 +1,9 @@
+num=10
+print(num)
+print(type(num))
+num=str(num)
+print(num)
+print(type(num))
+num=list(num)
+print(list(num))
+print(type(num))
