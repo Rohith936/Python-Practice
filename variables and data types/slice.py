@@ -1,0 +1,3 @@
+s="Programming"
+print(s[3:7])
+print('1','2','3',sep='|')
