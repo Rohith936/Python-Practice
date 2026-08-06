@@ -1,0 +1,11 @@
+a='17'
+a=int(a)
+print(a)
+print(type(a))
+b='17.0'
+print(type(b))
+c=float(b)
+d=int(c)
+print(d)
+print(type(d))
+print(type(int("42"))) 
