@@ -1,0 +1,18 @@
+x=int(input())
+y=int(input())
+if x==0 and y!=0:
+    print("Y-axis")
+elif y==0 and x!=0:
+    print("x-axis")
+elif x==0 and y==0:
+    print("ORIGIN")
+else:
+    if x>0 and y>0:
+        print("Q1")
+    elif x<0 and y>0:
+        print("Q2")
+    elif x<0 and y<0:
+        print("Q3")
+    elif x>0 and y<0:
+        print("Q4")
+    
