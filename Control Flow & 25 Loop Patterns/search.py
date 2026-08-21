@@ -1,11 +1,12 @@
-a=tuple(input("Enter numbers into tuple:\n"))
-print(a)
-i=int(input("Enter number to search:\n"))
-i=str(i)
-if i not in a:
+a=list(map(int,input("Enter numbers into list:").split(',')))
+while True:
+    i=int(input("Enter number to search:\n")) #here we write input inside a loop.so repeatative asks for number until found
+    if i not in a:
         print("Number not found")
-else:
-    while i:
-        if i in a:
-            break;
-    print("Number Found")
+    elif i in a:
+        print("Number Found")
+        break
+
+
+
+
