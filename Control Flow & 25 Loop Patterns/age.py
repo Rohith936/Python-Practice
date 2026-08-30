@@ -7,3 +7,4 @@ elif age<=59:
     print("100 rupees")
 elif age>59:
     print("50 rupees")
+https://drive.google.com/drive/folders/1_XPsApv2idW-HxVkBGEyeMpywbnk6DUp?usp=sharing
