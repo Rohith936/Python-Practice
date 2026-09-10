@@ -20,3 +20,6 @@ def p_10(n=5):
                 rows+=' '
         print(' '*(n-i)+rows)
 p_10()
+
+
+
