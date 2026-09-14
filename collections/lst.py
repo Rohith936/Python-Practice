@@ -1,0 +1,12 @@
+lst=[10,20,30]
+print(lst)
+lst.append(40)
+print(lst)
+lst.insert(1,15)
+print(lst)
+lst.extend([50,60])
+print(lst)
+lst+=[70]
+print(lst)
+lst.remove(20)
+print(lst)
