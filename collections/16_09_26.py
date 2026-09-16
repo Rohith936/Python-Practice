@@ -31,3 +31,24 @@ print(students)
 
 # in lambda functions we consider the items in list it may be string/number/tuple
 
+#list comprehensions
+
+squares=[x*x for x in range(6)]
+print(squares)
+evens=[x for x in range(10) if x%2==0]
+print(evens)
+labels=["even" if x%2==0 else "odd" for x in range(4)]
+print(labels)
+flatten=[v for i in [[1,2],[3,4]] for v in i]
+print(flatten)
+paris=[(i,j) for i in range(2) for j in range(2)]
+print(paris)
+matrix=[[r*c for c in range(3)]for r in range(3)]
+print(matrix)
+
+a = [1, 2, 3]
+b = a            
+b.append(4)
+print(a) # a is also changing too
+
+
