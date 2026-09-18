@@ -47,5 +47,15 @@ for i in range(b):
     lst.append(0)
 print(lst)
 
+def move_zeros(nums):
+    pos=0
+    for i in nums:
+        if i!=0:
+            nums[pos]=i
+            pos+=1
+    for j in range(pos,len(nums)):
+        nums[j]=0
+    return nums
+print(move_zeros([1,0,5,0,6,7,0]))
+    
 '''
-
