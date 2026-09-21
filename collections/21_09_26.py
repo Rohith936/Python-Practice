@@ -32,4 +32,30 @@ print(squares)
 from_two = {k: v for k, v in zip("abc", [1, 2, 3])}
 print(from_two)
 
+a=[10,3,8,20,5]
+print(max(a)-min(a))
+
+b=[1,2,3,5,6]
+for i in range(1,len(b)+1):
+    if i not in b:
+        print(i)
+
+c=[1,3,4,2,3,1]
+j=set()
+for i in c:
+    if c.count(i)>1:
+        j.add(i)
+print(j)
+
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+c=set(a)
+d=set(b)
+print(c.intersection(d))
+e=[]
+for i in a:
+    if i in b:
+        e.append(i)
+print(e)
+print(sorted(a+b))
 '''
