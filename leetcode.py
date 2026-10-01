@@ -85,3 +85,15 @@ class Solution:
                     return [i, j]
 
 '''  
+'''
+class Solution:
+    def intersection(self, nums1: list[int], nums2: list[int]) -> list[int]:
+        return list(set(nums1).intersection(set(nums2)))
+class Solution:
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
+        num=sorted(nums1+nums2)
+        if len(num)%2!=0:
+            return num[len(num)//2]
+        else:
+            return (num[len(num)//2]+num[(len(num)//2)-1])/2
+'''
