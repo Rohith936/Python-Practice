@@ -97,3 +97,26 @@ class Solution:
         else:
             return (num[len(num)//2]+num[(len(num)//2)-1])/2
 '''
+class Solution:
+    def moveZeroes(self, nums: list[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        for i in nums:
+            if i==0:
+                nums.remove(i)
+                nums.append(i)
+                
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        b=[]
+        while n:
+            a=0
+            b.append(n)
+            for i in str(n):
+                a+=int(i)**2
+            if a==1:
+                return True
+            if a in b:
+                return False
+            n=a
