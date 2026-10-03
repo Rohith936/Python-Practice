@@ -120,3 +120,11 @@ class Solution:
             if a in b:
                 return False
             n=a
+class Solution:
+    def runningSum(self, nums: list[int]) -> list[int]:
+        a=[]
+        c=0
+        for i in nums:
+            c+=i
+            a.append(c)
+        return a
