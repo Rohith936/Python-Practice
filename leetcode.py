@@ -128,3 +128,24 @@ class Solution:
             c+=i
             a.append(c)
         return a
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        a=[]
+        b=0
+        c=len(nums)//2
+        for i in range(len(nums)//2):
+            a.append(nums[b])
+            a.append(nums[c])
+            b+=1
+            c+=1
+        return a
+class Solution:
+    def rotate(self, nums: list[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        a=len(nums)
+        nums.reverse()
+        k=k%a
+        nums[:k]=nums[:k][::-1]
+        nums[k:]=nums[k:][::-1]
