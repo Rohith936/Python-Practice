@@ -149,3 +149,9 @@ class Solution:
         k=k%a
         nums[:k]=nums[:k][::-1]
         nums[k:]=nums[k:][::-1]
+class Solution:
+    def maximumWealth(self, accounts: list[list[int]]) -> int:
+        a=[]
+        for i in accounts:
+            a.append(sum(i))
+        return max(a)
