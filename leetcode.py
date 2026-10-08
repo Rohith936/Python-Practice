@@ -155,3 +155,7 @@ class Solution:
         for i in accounts:
             a.append(sum(i))
         return max(a)
+class Solution:
+    def addBinary(self, a: str, b: str) -> str:
+        a,b=int(a,2),int(b,2)
+        return str(bin(a+b)[2:])
