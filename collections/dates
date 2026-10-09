@@ -1,0 +1,14 @@
+#dates in pythons is tomort as datetime to work with dates as date objects
+import datetime as dt
+x=dt.datetime.now()
+print(x)
+print(x.year)
+print(x.month)
+print(x.day)
+print(x.strftime('%A'))
+print(x.strftime('%a'))
+print(x.strftime('%d'))
+print(x.strftime('%B'))
+print(x.strftime('%b'))
+print(x.strftime('%C'))  #yaer divided by 100 and covert into int
+print(x.strftime('%c'))
