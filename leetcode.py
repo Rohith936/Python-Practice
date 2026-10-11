@@ -159,3 +159,20 @@ class Solution:
     def addBinary(self, a: str, b: str) -> str:
         a,b=int(a,2),int(b,2)
         return str(bin(a+b)[2:])
+
+class Solution:
+    def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
+        a=[]
+        n=set(nums)
+        for i in range(1,len(nums)+1):
+            if i not in n:
+                a.append(i)
+        return a
+class Solution:
+    def countDigits(self, num: int) -> int:
+        c=0
+        for i in str(num):
+            if num%int(i)==0:
+                c+=1
+        return c
+        
