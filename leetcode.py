@@ -175,4 +175,8 @@ class Solution:
             if num%int(i)==0:
                 c+=1
         return c
-        
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        address=address.replace('.','[.]')
+        return address
+            
