@@ -173,3 +173,84 @@ def arr1(a,arr):
             l//=2
 print(arr1(a,arr))
 '''
+#17
+'''
+import re
+txt="Åland"
+print(re.findall('\w',txt,re.ASCII))
+print(re.findall('\w',txt))
+print(re.findall('\w',txt,re.A))
+'''
+#18
+'''
+import re
+txt='The rain in Spain'
+print(re.findall('spain',txt,re.DEBUG))
+ratio=0.256
+print(f"{ratio:.0%}")
+
+def greet(name):
+    """Return a friendly greeting for the given name."""
+    return f"Hello, {name}!"
+print(greet.__doc__) # Return a friendly greeting for the given name.
+help(greet) 
+
+a=[1,2,3,5]
+print(3 in a)
+a=set(a)
+print(a)
+print(3 in a)
+
+print(ord('A'))
+'''
+#1
+'''
+a=input()
+c=0
+for i in a:
+    c+=1
+print(c)
+'''
+#2
+'''
+a=input()
+b=''
+for i in range(len(a)-1,-1,-1): 
+    b+=a[i]
+print(b)
+'''
+#3
+'''
+a=input()
+print(a[::-1])
+if a==a[::-1]:
+    print('yes')
+else:
+    print('NO')
+'''
+#4
+'''
+a=input()
+c=0
+for i in a:
+    if i in "aeiouAEIOU":
+        c+=1
+print(c)
+'''
+#5
+'''
+a=input()
+b=0
+c=0
+for i in a:
+    if ord(i)>96:
+        b+=1
+    else:
+        c+=1
+print(f'lower:{b}')
+print(f'upper:{c}')
+'''
+#6
+a='rohith'
+for i in range(6-1,-2,-3):
+    print(i)
