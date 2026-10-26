@@ -179,4 +179,19 @@ class Solution:
     def defangIPaddr(self, address: str) -> str:
         address=address.replace('.','[.]')
         return address
-            
+'''
+s=input()
+s=list(s)
+a=0
+b=len(s)-1
+while a<b:
+    if s[b] not in 'aeiouAEIOU':
+        b-=1
+    elif s[a] not in 'aeiouAEIOU':
+        a+=1
+    else:
+        s[a],s[b]=s[b],s[a]
+        a+=1
+        b-=1    
+print(''.join(s))
+'''
