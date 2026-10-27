@@ -25,3 +25,62 @@ print(insertionSort([5,4,3,1]))
             # closing database connections
             # releasing resources
             #performing actions that should happen whether an operation succeeds or fails
+#1
+'''        
+try:
+    print(x)
+except:
+    print('An exception occurred')
+'''
+#2
+'''
+try:
+    print(x)
+except NameError:
+    print('Variable x is not defined')
+except:
+    print('Something else went wrong')
+'''
+#3
+'''
+try:
+    print('Hello')
+except:
+    print('Something went wrong')
+else:
+    print('Nothing went wrong')
+'''
+#4
+'''
+try:
+    print(x)
+except:
+    print('Something went wrong')
+finally:
+    print('The "try except" is finished')
+'''
+#5
+'''
+try:
+    f=open('demofile.txt')
+    try:
+        f.write('Lorum Ipsum')
+    except:
+        print('Something went wrong when writing to the file')
+    finally:
+        f.close()
+except:
+    print('Something went wrong when opening the file')
+'''
+#6
+'''
+x=-1
+if x<0:
+    raise Exception('Sorry')
+'''
+#7
+'''
+x = "hello"
+if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+'''
