@@ -7,13 +7,10 @@ result=str(a+b)
 print(list(map(int,result)))#converting lists
 
 
-
-
 c=[1,2,3]
 result=''.join(map(str,c))#123 -> means joining the list items
 print(result)
 print(type(result))
-
 
 
 def nu(num):
@@ -44,8 +41,6 @@ while a>=0:
         d+=1
 print(d)
 
-
-
 n=234
 n=list(str(n))
 a=len(n)-1
@@ -56,10 +51,6 @@ while a>=0:
     c+=int(n[a])
     a-=1
 print(b-c)
-
-
-
-
 
 candies = [2,3,5,1,3]
 extraCandies=3
@@ -195,3 +186,14 @@ while a<b:
         b-=1    
 print(''.join(s))
 '''
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if needle in haystack:
+            return haystack.index(needle)
+        return -1
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s=s.split()
+        for i in range(len(s)):
+            s[i]=s[i][::-1]
+        return ' '.join(s)
