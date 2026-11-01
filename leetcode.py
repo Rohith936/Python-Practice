@@ -197,3 +197,21 @@ class Solution:
         for i in range(len(s)):
             s[i]=s[i][::-1]
         return ' '.join(s)
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        if n >0:
+            for x in range(n):
+                a=3**x
+                if a>=n:
+                    if a==n:
+                        return True
+                    if a>n:
+                        break
+        return False
+class Solution:
+    def isBoomerang(self, points: list[list[int]]) -> bool:
+        x1,y1 = points[0]
+        x2,y2 = points[1]
+        x3,y3 = points[2]
+
+        return (x2-x1)*(y3-y1) != (y2-y1)*(x3-x1)
