@@ -215,4 +215,4 @@ class Solution:
         x3,y3 = points[2]
 
         return (x2-x1)*(y3-y1) != (y2-y1)*(x3-x1)
-https://drive.google.com/drive/folders/11n-YxzFBKuxaljvCvwjn3Irio5LFCqEe?usp=sharing
+https://drive.google.com/drive/folders/1W_WkefeaMXobMZUvjJCtDSuVqzFL-z8I?usp=sharing
