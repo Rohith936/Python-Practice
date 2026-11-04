@@ -215,4 +215,31 @@ class Solution:
         x3,y3 = points[2]
 
         return (x2-x1)*(y3-y1) != (y2-y1)*(x3-x1)
+class Solution:
+    def addStrings(self, num1: str, num2: str) -> str:
+        a=list(num1)
+        b=list(num2)
+        for i,j in zip(a,b):
+            i=int(i)
+            j=int(j)
+        a=int(''.join(a))
+        b=int(''.join(b))
+        return str(a+b)
+
+class Solution:
+    def toLowerCase(self, s: str) -> str:
+        return s.lower()
+
+class Solution:
+    def capitalizeTitle(self, title: str) -> str:
+        title=title.lower()
+        a=title.split(' ')
+        b=[]
+        for i in a:
+            if len(i)<3:
+                b.append(i)
+            else:
+                c=i.title()
+                b.append(c)
+        return ' '.join(b)
 https://drive.google.com/drive/folders/1P2hUx32zmtNLQj4m3cnb9W5ut4R85MxS?usp=sharing
