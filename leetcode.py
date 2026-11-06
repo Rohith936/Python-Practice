@@ -242,4 +242,12 @@ class Solution:
                 c=i.title()
                 b.append(c)
         return ' '.join(b)
-https://drive.google.com/drive/folders/1P2hUx32zmtNLQj4m3cnb9W5ut4R85MxS?usp=sharing
+class Solution:
+    def minMoves(self, nums: List[int]) -> int:
+        a=max(nums)
+        count=0
+        for i in  nums:
+            while i<a:
+                i+=1
+                count+=1
+        return count
