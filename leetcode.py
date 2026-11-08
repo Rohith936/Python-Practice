@@ -257,3 +257,11 @@ class Solution:
             if s.count(i)==1:
                 return s.index(i)
         return -1
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        for i in ransomNote:
+            if i not in magazine:
+                return False
+            if ransomNote.count(i) > magazine.count(i):
+                return False
+        return True
