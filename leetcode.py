@@ -265,4 +265,6 @@ class Solution:
             if ransomNote.count(i) > magazine.count(i):
                 return False
         return True
-https://drive.google.com/drive/folders/11n-YxzFBKuxaljvCvwjn3Irio5LFCqEe?usp=sharing
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        return moves.count('U') == moves.count('D') and moves.count('L') == moves.count('R')
