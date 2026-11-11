@@ -268,4 +268,14 @@ class Solution:
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
         return moves.count('U') == moves.count('D') and moves.count('L') == moves.count('R')
-https://drive.google.com/drive/folders/1P2hUx32zmtNLQj4m3cnb9W5ut4R85MxS?usp=sharing
+s = input()
+lst = []
+c = 0
+while c < len(s):
+    b = s.rfind(s[c])
+    for i in range(c, b + 1):
+        if s.rfind(s[i]) > b:
+            b = s.rfind(s[i])
+    lst.append(b - c + 1)
+    c = b + 1
+print(lst)
