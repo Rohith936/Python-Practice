@@ -279,3 +279,33 @@ while c < len(s):
     lst.append(b - c + 1)
     c = b + 1
 print(lst)
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack=[]
+        for i in s:
+            if i in '({[':
+                stack.append(i)
+            else:
+                if not stack:
+                    return False
+                if i==')':
+                    if stack[-1]=='(':
+                        a=stack.pop()
+                    else:
+                        return False
+                if i=='}':
+                    if stack[-1]=='{':
+                        a=stack.pop()
+                    else:
+                        return False
+                if i==']':
+                    if stack[-1]=='[':
+                        a=stack.pop()
+                    else:
+                        return False
+        return len(stack)==0
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        for i in t:
+            if t.count(i) != s.count(i):
+                return i
