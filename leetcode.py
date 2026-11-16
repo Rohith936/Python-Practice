@@ -309,3 +309,10 @@ class Solution:
         for i in t:
             if t.count(i) != s.count(i):
                 return i
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        c=0
+        for i in stones:
+            if i in jewels:
+                c+=1
+        return c
