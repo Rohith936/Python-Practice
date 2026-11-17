@@ -316,3 +316,7 @@ class Solution:
             if i in jewels:
                 c+=1
         return c
+class Solution:
+    def majorityElement(self, nums: list[int]) -> int:
+        nums.sort()
+        return nums[len(nums)//2]
