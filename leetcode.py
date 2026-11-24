@@ -341,3 +341,11 @@ class Solution:
             if a==a[::-1]:
                 return True
         return False
+import itertools
+class Solution:
+    def arrayPairSum(self, nums: List[int]) -> int:
+        a=list(itertools.combinations(nums, 2))
+        b=[]
+        for i in a:
+            b.append(sum(i))
+        return max(b)
